@@ -1,0 +1,8 @@
+Client: test stroki
+Server answer: TeSt_sTrOkI
+Client: papappapa
+Server answer: PaPaPpApA
+Client: 12
+Server answer: 12000
+Client: command1
+Server answer: 53264543
