@@ -1,8 +1,14 @@
-Client: test stroki
-Server answer: TeSt_sTrOkI
-Client: papappapa
-Server answer: PaPaPpApA
-Client: 12
-Server answer: 12000
+Client: hello
+Server answer: HeLlO
+Client: test2
+Server answer: TeSt2
+Client: 34
+Server answer: 34000
 Client: command1
-Server answer: 53264543
+Server answer: Command1111 was called
+Client: command4
+Server answer: Command4444 was called
+Client: 234234
+Server answer: 234234000
+Client: hello test 23 test      string
+Server answer: HeLlO_TeSt_23_TeSt______StRiNg

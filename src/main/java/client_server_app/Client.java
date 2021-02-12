@@ -10,15 +10,17 @@ public class Client {
              BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
              DataOutputStream writer = new DataOutputStream(socket.getOutputStream());
              DataInputStream reader = new DataInputStream(socket.getInputStream())) {
-
+            String clientCommand;
             while (!socket.isOutputShutdown()) {
-                if(br.ready() && !br.readLine().isEmpty()) {
-                    String clientCommand = br.readLine();
-                    writer.writeUTF(clientCommand);
-                    writer.flush();
-                    System.out.println("Client sent message " + clientCommand + " to server.");
-                    System.out.println("Server response" + reader.readUTF());
-                }}
+                if ((clientCommand = br.readLine()).isEmpty()) {
+                    socket.close();
+                    break;
+                }
+                writer.writeUTF(clientCommand);
+                writer.flush();
+                System.out.println("Client sent message " + clientCommand + " to server.");
+                System.out.println("Server response" + reader.readUTF());
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

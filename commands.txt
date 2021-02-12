@@ -1,5 +1,5 @@
-command1 : 53264543
-command2 : comanda 2 priv
-command3 : gua
-command4 : hey
-command5 : hau
+command1 : Command1111 was called
+command2 : Command2222 was called
+command3 : Command3333 was called
+command4 : Command4444 was called
+command5 : Command5555 was called
